@@ -1,0 +1,38 @@
+h2{
+	background-color: skyblue;
+	border: 5px dotted black;
+}
+.intro{
+	text-align: center;
+	text-decoration: underline skyblue;
+}
+p em{
+	color: purple;
+}
+
+#drapeau{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.vert{
+	background-color: rgb(0,255,0);
+	height: 100px;
+	width: 80px;
+}
+.rouge{
+	background-color: rgb(255,0,0);
+	height: 100px;
+	width: 80px;
+}
+.jaune{
+	background-color: rgb(255,255,0);
+	height: 100px;
+	width: 80px;
+}
+.fa_fa-star{
+	color: yellow;
+	margin-left: 10px;
+	padding-top: 15px;
+}

@@ -1,0 +1,24 @@
+.cha{
+	text-align: center;
+	border: 10px solid skyblue;
+}
+.media{
+	text-align: center;
+}
+div{
+	display: flex;
+	justify-content: center;
+}
+img{
+	height: 250px;
+	width: 500px;
+	border: 5px solid red;
+	
+}
+.sens{
+	text-decoration: underline;
+	margin-left: 50px;
+}
+ul{
+	margin-left: 50px;
+}

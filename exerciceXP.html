@@ -1,50 +1,109 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>exercice2XP</title>
+	<title>exerciceXP</title>
 </head>
 <body>
 	<script type="text/javascript">
-		//exercice1
-		let x = 5;
-        let y = 2;
-        if (x > 2) {
-        	alert("5 est le plus grand nombre")
-        }else if (y<5) {
-        	alert("2 est le plus petit")
-        }else{
-        	alert("valeur nulle")
-        }
-        //exercice2
-        let newDog = 'Chihuahua'
-        console.log(newDog.length() )
-        console.log(newDog.toUpperCase() )
-        console.log(newDog.toLowerCase ())
-        if ( newDog === newDog) {
-        	alert("J’adore les chihuahuas, c’est ma race de chien préférée")
-        } else{
-        	alert("Je m’en fiche, je préfère les chats" )
-        }
-        //exercice3
-        let num1 = Number(prompt('entrer un nombre svp'))
-        if (num1%2 == 0) {
-        	alert("ce nombre est paire")
-        }else {
-        	alert("ce nombre est impaire")
-        }
-        //exercice4
-        let users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"];
-        u = users.length
-        console.log(users.join(' '))
-        if (u == 0) {
-        	console.log("le tableau d’utilisateurs est vide")
-        }else if (u == 1) {
-        	console.log(users[0]+'est en ligne' )
-        }else if (u == 2) {
-        	console.log(users[0] +'et'+ users[1] +'sont en ligne')
-        }else if (u > 2) {
-        	console.log(users[0] +'et'+ users[1] +'et'+ (u-2) +'autres utilisateurs')
-        }
+//exercice 1 partie 1
+		let people = ["Greg", "Mary", "Devon", "James"];
+		let last= 'reine'
+		people.splice(0,1)
+		people.splice(2,1,'Jason')
+		people.push('reine')
+		people.indexOf('Mary')
+		people.slice(1, -1)
+		people.indexOf('Foo')//renvoit -1 parcequ'il nn'existe pas dant le tableau
+		people.indexOf('reine')//3
+		people.length//4/
+//partie 2 boucles
+         
+         for (let i of people) {//of represente les elements,in reprensente les index
+           
+         	if (i==='Jason') {
+         		console.log(i)
+         		break;
+         	} 
+         		console.log(i)
+         }
+
+//exercice 2
+         let colors = ["blue","rouge","vert","orange","jaune"];
+        let suffixes = ['1','2','3','4','5']
+         for (let i in colors) {
+         	console.log('Mon choix #'+ suffixes[i] +'est' +colors[i])
+         }
+         //2eme cas
+         let colors = ["blue","rouge","vert","orange","jaune"];
+         let temp = 0
+         for (let i in colors) {
+         	console.log('Mon choix #'+ temp +'est' +colors[i])
+         }
+
+//exercice 3
+         let number = Number(prompt('entrez un nombre svp!'))
+         typeof(number)
+        
+         do{
+         	 number = Number(prompt('entrez un nombre svp!'))
+         	console.log('il a fallu du temps ooofff')
+
+         } while (number<10)
+ //exercice 4
+         let building = {
+	    numberOfFloors : 4,
+	    numberOfAptByFloor : {
+	        firstFloor : 3,
+	        secondFloor : 4,
+	        thirdFloor : 9,
+	        fourthFloor : 2,
+	    },
+	    nameOfTenants : ["Sarah", "Dan", "David"],
+	    numberOfRoomsAndRent:  {
+	        sarah: [3, 990],
+	        dan :  [4, 1000],
+	        david : [1, 500],
+	    },
+	}  
+			console.log(building.numberOfFloors)
+
+		console.log(building.numberOfAptByFloor["firstFloor"] + building.numberOfAptByFloor["thirdFloor"]) 
+		console.log(building.nameOfTenants[2]) 
+		console.log(building.numberOfRoomsAndRent["david"][0])
+		
+		if (building.numberOfRoomsAndRent["david"][1] != building.numberOfRoomsAndRent["sarah"][1] > building.numberOfRoomsAndRent["dan"][1]) {
+			console.log(building.numberOfRoomsAndRent["dan"][1] + 200)
+
+		}
+
+//exercice 5 (pas finis)
+       let famille = {nomdesparentsetenfans:["jean","julie","ada","toma"]
+	       age:{ 
+	       	jean:49,
+	       	julie: 39,
+	       	ada: 16;
+	       	toma: 8,
+	       },
+	       piecedelamaison:8
+	       voitures:5}  
+	       
+//exercice 6
+         let details = {
+			  my: 'name',
+			  is: 'Rudolf',
+			  the: 'raindeer'
+			}
+			let arr = Object.keys(details).map(function(key){ return[Object(key),details[key]] } )
+			for (let i of arr) {
+			 	console.log(arr.join(' '))
+			 } 
+
+//exercice 7
+            let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"]
+            names.forEach(word =>{
+			  console.log(word.charAt(0))
+			})
+			
 	</script>
 
 </body>

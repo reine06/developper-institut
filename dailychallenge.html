@@ -1,21 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Bottles of Beers</title>
-</head>
-<body>
-	<script type="text/javascript">
-		
-			for (var i = 99; i>=0; i--) {
-			if (i>0) {
-				console.log(i+"Bottles of Beers on the wall."+i+ "Bottles of Beers ! take one down.pass in around."+(i-1)+"Bottles of beer on the wall." );
-			} else {
-				console.log("no more Bottles of beer on the wall no more Bottlesnof beer.Go to the store,buy some more,99 Bottles of beer on the wall.")
-			}
-		}
-		
-		
-	</script>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Create a solar system</title>
+        <style>
+            body {
+                background-color: black;
+                padding: 10px;
+            }
+            .planet {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                text-align: center;
+                padding: 10px;
+                position: relative;
+                border: 2px solid white;
+            }
+            .moon {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: rgb(237, 237, 237);
+                border: 5px solid red;
+            }
+        </style>
+    </head>
+    <body>
 
-</body>
+    <section class="listPlanets"></section>
+
+    <script type="text/javascript">
+        let planetes =["terre","mars","venus","uranus","mercure","saturne"]
+        console.log(planetes)
+        let container =document.createElement('div')
+        container.className='planet'
+        document.body.appendChild(container)
+        container.style.background="red"
+        let container2 =document.createElement('div')
+        container2.className='planet'
+        document.body.appendChild(container2)
+        container2.style.background="rgb(226, 43, 144)"
+        let container3 =document.createElement('div')
+        container3.className='planet'
+        document.body.appendChild(container3)
+        container3.style.background="rgb(226, 95, 43)"
+        let container4 =document.createElement('div')
+        container4.className='planet'
+        document.body.appendChild(container4)
+        container4.style.background="rgb(214, 226, 43)"
+        let container5 =document.createElement('div')
+        container5.className='planet'
+        document.body.appendChild(container5)
+        container5.style.background="rgb(43, 144, 226)"
+        let container6 =document.createElement('div')
+        container6.className='planet'
+        document.body.appendChild(container6)
+        container6.style.background="purple"
+
+
+    </script>
+    </body>
+    <style>
+    div{
+        background-color: rgb(226, 95, 43)
+    }
+    </style>
 </html>

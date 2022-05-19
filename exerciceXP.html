@@ -1,110 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>exerciceXP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exerciceXP</title>
 </head>
 <body>
-	<script type="text/javascript">
-//exercice 1 partie 1
-		let people = ["Greg", "Mary", "Devon", "James"];
-		let last= 'reine'
-		people.splice(0,1)
-		people.splice(2,1,'Jason')
-		people.push('reine')
-		people.indexOf('Mary')
-		people.slice(1, -1)
-		people.indexOf('Foo')//renvoit -1 parcequ'il nn'existe pas dant le tableau
-		people.indexOf('reine')//3
-		people.length//4/
-//partie 2 boucles
-         
-         for (let i of people) {//of represente les elements,in reprensente les index
-           
-         	if (i==='Jason') {
-         		console.log(i)
-         		break;
-         	} 
-         		console.log(i)
-         }
+      <style>
+    /*exercice1
+    p {
+      background: yellow;
+      color: red;
+    }*/
+  /* exercice2
+   #container {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: yellow;
+      }
+      #animate {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: red;
+      }*/
+     /* exercice3
+        #target {
+          width: 200px;
+          height: 200px;
+          position: relative;
+          background: yellow;
+        }
+        #box {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          background-color: red;
+        }*/
+        </style>
 
-//exercice 2
-         let colors = ["blue","rouge","vert","orange","jaune"];
-        let suffixes = ['1','2','3','4','5']
-         for (let i in colors) {
-         	console.log('Mon choix #'+ suffixes[i] +'est' +colors[i])
-         }
-         //2eme cas
-         let colors = ["blue","rouge","vert","orange","jaune"];
-         let temp = 0
-         for (let i in colors) {
-         	console.log('Mon choix #'+ temp +'est' +colors[i])
-         }
+    
+   1.exercice1
+     <!-- <div id="container"></div>
+    <button id="clear" >Clear Interval</button>-->
+    
+    2.exercice2
+       <!--<p><button onclick="myMove()" >Click Me</button></p>
+      <div id="container">
+        <div id="animate"></div>
+      </div>-->
+      3.exercice3
+      <div id="target" ondrop="dragDrop(event)"
+      ondragover="allowDrop(event)"
+      ondragenter="allowEnter(event)"
+      ondragleave="allowLeave(event)"></div>
+      <br>
+      <div id="box" draggable="true" ondragstart="dragStart(event)"></div>
+      
+    <script>
 
-//exercice 3
-         let number = Number(prompt('entrez un nombre svp!'))
-         typeof(number)
-        
-         do{
-         	 number = Number(prompt('entrez un nombre svp!'))
-         	console.log('il a fallu du temps ooofff')
+        /*exercice1
+        let ti
+        let time 
+        let btn =document.querySelector('#clear')
+        function appeler() {           
+             let appele = "Hello world"
+            alert(appele )  
+            }setTimeout(appeler,2000) //temps d'execution une fois apres 2000ms
+        function affiche() {
+            let div1= document.getElementById('container')//acceder à l'element du #container 'div'
+            let newp= document.createElement('p')// creer un nouvel element 'p'
+            let newp1=document.createTextNode("Hello World")//creer le texte de 'p'
+            newp.appendChild(newp1)   //ajouter l'element dans 'p'
+             document.body.appendChild(newp) //ajouter l'lement dans le body
+           }ti=setInterval(affiche,2000)//temps d'execution plusieurs fois apres 2000ms
+           let id =setInterval(function(){
+            let newp= document.createElement('p')
+            let newp1=document.createTextNode("Hello World")
+            newp.appendChild(newp1) 
+            let div2 = document.getElementsByTagName('div')[0]//acceder à la 'div' definit plus haut
+            div2.appendChild(newp)//ajouter la variable newp(p) dans la div
+            let p = document.getElementsByTagName('p') //acceder à 'p'
+            if(p.length == 5){// nbre de paragraohe
+                clearInterval(id)//arreter l'execution au bout de 5 paragraphe
+            }
+           },2000);
+           let bout = document.getElementsByTagName('button')[0]
+           bout.addEventListener('click',stop)
+           function stop() {
+               clearInterval(id)//arreter l'execution grace au button
+               
+           }*/
+           //exercice2
+          /* let btn =document.querySelector('button')
+           let t
+           let petite = document.getElementById('animate')
 
-         } while (number<10)
- //exercice 4
-         let building = {
-	    numberOfFloors : 4,
-	    numberOfAptByFloor : {
-	        firstFloor : 3,
-	        secondFloor : 4,
-	        thirdFloor : 9,
-	        fourthFloor : 2,
-	    },
-	    nameOfTenants : ["Sarah", "Dan", "David"],
-	    numberOfRoomsAndRent:  {
-	        sarah: [3, 990],
-	        dan :  [4, 1000],
-	        david : [1, 500],
-	    },
-	}  
-			console.log(building.numberOfFloors)
+           btn.addEventListener('Click',myMove)
+           function myMove() {
+               setInterval(move_square,500)
+               
+           }
+           let move_right=15
+           let move_square =()=>{
+               petite.style.left=move_right +'px'
+               move_right+= 15
+               if (move_right < 100) {
+                   clearInterval(t)
+                   
+               }
 
-		console.log(building.numberOfAptByFloor["firstFloor"] + building.numberOfAptByFloor["thirdFloor"]) 
-		console.log(building.nameOfTenants[2]) 
-		console.log(building.numberOfRoomsAndRent["david"][0])
-		
-		if (building.numberOfRoomsAndRent["david"][1] != building.numberOfRoomsAndRent["sarah"][1] > building.numberOfRoomsAndRent["dan"][1]) {
-			console.log(building.numberOfRoomsAndRent["dan"][1] + 200)
+           }*/
+    //exercice3
+    function allowDrop(event) {
+  event.preventDefault();
+}
+function allowEnter(event) {
+  event.target.classList.add('over');
+}
+function allowLeave(event) {
+  event.target.classList.remove('over');
+}
+function dragStart(event) {
+console.log("target:",  event.target)
+console.log("id: ",  event.target.id )
+event.dataTransfer.setData("text", event.target.id);
+}
+function dragDrop(event) {
+event.preventDefault();
+let data = event.dataTransfer.getData("text");
+console.log("data: ",  data)  
+  
+let box = document.getElementById(data)
+event.target.appendChild(box);
+}
 
-		}
 
-//exercice 5 (pas finis)
-       let famille = {nomdesparentsetenfans:["jean","julie","ada","toma"]
-	       age:{ 
-	       	jean:49,
-	       	julie: 39,
-	       	ada: 16;
-	       	toma: 8,
-	       },
-	       piecedelamaison:8
-	       voitures:5}  
-	       
-//exercice 6
-         let details = {
-			  my: 'name',
-			  is: 'Rudolf',
-			  the: 'raindeer'
-			}
-			let arr = Object.keys(details).map(function(key){ return[Object(key),details[key]] } )
-			for (let i of arr) {
-			 	console.log(arr.join(' '))
-			 } 
 
-//exercice 7
-            let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"]
-            names.forEach(word =>{
-			  console.log(word.charAt(0))
-			})
-			
-	</script>
 
+
+    </script>
 </body>
 </html>
+

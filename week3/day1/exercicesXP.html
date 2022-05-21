@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>exercices</title>
+
+</head>
+<body>
+     <!--
+     	//exercice 1
+	<div id="container">Users:</div>
+<ul class="list">
+    <li>John</li>
+    <li>Pete</li>
+</ul>
+<ul class="list">
+    <li>David</li>
+    <li>Sarah</li>
+    <li>Dan</li>
+</ul>
+<script type="text/javascript">
+	let di =document.getElementById('container') 
+	console.log(di)
+	let li = document.querySelectorAll('.list')[0].lastElementchild
+	li.innerText= 'richard'
+	let ul_list = document.getElementByClassName('list')
+	for (let i of ul_list) {
+		console.log(ul.firstElementChild);
+		ul.firstElementChild.innerText='reine'
+	}
+	let Sarah = document.getElementsByTagName('ul')[1].children[1]
+	ul_list[1].removeChild(Sarah)
+	for (let ul of ul_list){
+		ul.classList.add('student_list')
+	}
+	ul_list[0].classList.add('university','attendance')
+</script>-->
+
+
+		<div>Users:</div>
+		<ul>
+		    <li>John</li>
+		    <li>Pete</li>
+		</ul>
+		<script type="text/javascript">
+			let div4 = document.querySelector('div')
+			div4.style.background='lightblue'
+			let john_li = document.querySelector('li')
+			john_li.style.display = 'none'
+			let pete_li = document.querySelector('li:last-child')
+			pete_li.style.border = ' 2px solid black'
+			document.body.style.fontSize ='25px'
+			if(div4.style.background == 'lightblue'){
+				alert('hello ${john_li.innerText} and ${pete_li.innerText}')
+			}
+		</script>
+
+<!--
+// exercice 3
+<div id="navBar">
+    <ul>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">My Friends</a></li>
+        <li><a href="#">Messenger</a></li>
+        <li><a href="#">My Pics</a></li>
+    </ul>
+</div>
+<script type="text/javascript">
+	    let nav_div = document.querySelector('#navBar')
+        nav_div.setAttribute('id', 'socialNetworkNavigation')
+​
+        let li = document.createElement('li')
+        let txt = document.createTextNode('Logout')
+        li.appendChild(txt)
+        nav_div.children[0].appendChild(li)
+        nav_div.firstElementChild.appendChild(li)
+        console.log(nav_div.firstElementChild.firstElementChild.textContent)
+        console.log(nav_div.firstElementChild.lastElementChild.textContent)
+​
+        
+	
+</script>-->
+
+
+
+</body>
+</html>

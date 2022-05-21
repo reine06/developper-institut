@@ -1,0 +1,21 @@
+.navbar-expand-lg .navbar-collapse{
+	display: flex !important;
+	flex-basis: auto;
+	justify-content: right;
+}
+#container{
+    display: flex;
+    margin: 50px;
+}
+h2{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    background-image: url('backecole.webp');
+    opacity: 0.8;
+    margin: 50px;
+    padding: 25px;
+    
+}
+h2:hover{
+    color: blue;
+}

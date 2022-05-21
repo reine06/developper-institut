@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dailychallenge</title>
+</head>
+<body>
+    <h5>texte</h5>
+    <input>
+    <span id="output"></span>
+    
+    <script>  
+        document.querySelector('input').addEventListener('input'.check_letters)
+        let letter_pattern= /^[a-zA-Z]/
+        function check_letters(e) {
+            let user_input= e.target.value
+            let last_index = user_input.length -1
+            console.log(user_input.substring(last_index));
+            let last_input = user_input.substring(last_index)
+            if(last_input.match(letter_pattern)){
+                
+
+                document.querySelector('#output').innerHTML += last_input
+            }
+        }
+    </script>
+</body>
+</html>

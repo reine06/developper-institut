@@ -1,0 +1,26 @@
+
+.container1{
+	padding: 40px;
+	background-image: url("imagefond.jpg");
+	text-align: center;
+}
+
+
+h2,p{
+	font-family: verdana,sans-serif;
+	color:rgb(25,50,220);
+}
+.sexe{
+	font-family: verdana,sans-serif;
+	color:rgb(25,50,220);
+}
+button{
+	background-color: rgba(25,50,220,1.0);
+	color: white;
+	box-shadow: 2px 3px 4px black;
+}
+.navbar-expand-lg .navbar-collapse{
+	display: flex !important;
+	flex-basis: auto;
+	justify-content: right;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exoscours</title>
+</head>
+<body>
+    <style>
+        .small{
+    background-color:rgb(251, 255, 0) ;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+.big{
+    background-color: rgb(4, 0, 255);
+    width: 300px;
+    height: 300px;
+}
+body{
+    margin: 30px;
+}
+        </style>
+
+   <h2 style="display:none;">Les ventes se terminent dans 10min !Allez prendre le train !!</h2> 
+   <!--<img src="train.jpg" alt="la vitesse" style="position:absolute;">-->
+   <div class="big"> <div class="small"> </div>  </div>
+   <button type="button" class="click"  onclick="myMove()">Click Me</button>
+    <script>
+        let timer
+        function ventes() {//pour faire apparaitre h2 apres 5 secondes
+            document.querySelector('h2').style.display="block"   
+        }
+         setTimeout(ventes, 5000);
+         let train = document.querySelector('img')//bouger le train
+         let move = 50
+         function move_train() {
+             train.style.left= move +'px'
+             move+=50
+             if (move > 1000) {
+                 clearInterval(timer)
+                 
+             }
+             
+         }timer=setInterval(move_train,400)
+         let click= document.querySelector('.click')
+         let t
+         let petit= document.querySelector('.small') 
+         function myMove() {
+             set
+       
+        }
+    </script>
+    
+</body>
+</html>

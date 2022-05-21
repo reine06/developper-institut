@@ -1,0 +1,12 @@
+.petitcar{
+    background-color:chartreuse ;
+    width: 80px;
+}
+.container{
+    background-color: cyan;
+    width: 250px;
+    display: flex;
+}
+body{
+    margin: 30px;
+}

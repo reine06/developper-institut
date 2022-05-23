@@ -1,0 +1,93 @@
+header{
+	background-image: url(headerback.jpg);
+	background-attachment: fixed;
+	height: 600px;
+	width: 100%;
+	background-color: #6c757d;
+	
+	
+
+
+}
+#overlay{
+	width: 100%;
+	height: 650px;
+	position: absolute;
+	top:55px;
+	left: 0;
+	background-color: rgba(255,255,255,0.2);
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: -300px;
+}
+.container, .container-lg, .container-md, .container-sm {
+  max-width: 960px;
+  margin-bottom: 200px;
+}
+ .h3, .h6, h3, h6 {
+  margin-bottom: 4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+}
+h2{
+	color: green;
+	text-align: center;
+
+}
+
+
+h4{
+	color: green;
+	text-align: left;
+}
+.profession{
+	font-size: 15px;
+	font-style: italic;
+	font-family: verdana;
+}
+.navbar-expand-lg .navbar-collapse{
+	                                display: flex !important;
+									flex-basis: auto;
+									justify-content: right;
+}
+
+.container{
+	height: 100px;
+	width: 100%;
+	display: grid;
+	grid-gap: 5px ;
+	grid-template-areas:
+	"p i" 
+	
+	
+}
+.photo{
+	grid-area: p;
+	}
+.info{
+	grid-area: i;
+	
+	text-align: left;
+	padding-left: 15px;
+	border-left: 5px solid green;
+}
+
+.face{
+	filter:blur(3px);
+	transition: .3s ease-in-out;
+
+}
+.face:hover{
+	filter: blur(0);
+}
+
+
+
+

@@ -1,0 +1,68 @@
+body{
+	margin: 0;
+	background-image: url(imglacoste.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	
+
+}
+h1{
+	
+	text-decoration: underline;
+	text-align: center;
+	font-family: lucida console,monospace;
+	font-style: bold;
+	font-stretch: expanded;
+}
+p{
+	font-size: 25px;
+	color: white;
+}
+em{
+	font-style: italic;
+	margin-right: 20px;
+}
+nav{
+	background-color: green;
+	width: 100%;
+	font-size: larger;
+	padding: 25px;
+}
+img{
+	width: 90px;
+	height: 80px;
+	top: 150px;
+	float: left;
+	position: bottom right;
+	
+	
+}
+nav a{
+	color: white;
+	text-decoration: none;
+}
+.menu{
+	float: left;
+	margin-right: 90px;
+	font-weight: bold;
+}
+.menu:hover{
+	font-size: 20px;
+
+}
+div{
+	float: right;
+	margin-right: 50px;
+}
+
+
+
+footer{
+	position: absolute;
+	bottom: 0;
+	left: 100px;
+	background-color:rgba(0,200,0,0.5);
+	text-align: center;
+}

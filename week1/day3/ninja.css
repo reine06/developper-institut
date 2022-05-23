@@ -1,0 +1,45 @@
+.container{
+	height: 500px;
+	width: 100%;
+	border: 5px black;
+	display: grid;
+	grid-gap: 10px 10px;
+	background-color: green;	
+	grid-template-areas:
+	"mc b ma mc b ma mc b ma mc b ma mc b ma mc" 
+	"b ma mc b ma mc b ma mc b ma mc b ma mc b"
+	"ma mc b ma mc b ma mc b ma mc b ma mc b ma"
+	"mc b ma mc b ma mc b ma mc b ma mc b ma mc" 
+	"b ma mc b ma mc b ma mc b ma mc b ma mc b"
+	"ma mc b ma mc b ma mc b ma mc b ma mc b mc"
+	"mc b ma mc b ma mc b ma mc b ma mc b ma mc" 
+	"b ma mc b ma mc b ma mc b ma mc b ma mc b"
+	"ma mc b ma mc b ma mc b ma mc b ma mc b mc"
+	"mc b ma mc b ma mc b ma mc b ma mc b ma mc" 
+	"b ma mc b ma mc b ma mc b ma mc b ma mc b"
+	"ma mc b ma mc b ma mc b ma mc b ma mc b mc"
+	"mc b ma mc b ma mc b ma mc b ma mc b ma mc" 
+	"b ma mc b ma mc b ma mc b ma mc b ma mc b"
+	"ma mc b ma mc b ma mc b ma mc b ma mc b mc"
+	"mc b ma mc b ma mc b ma mc b ma mc b ma mc"	
+	;
+}
+
+.marronclaire{
+	grid-area: mc;
+	background-color: #D4831C;
+	height: 50px;
+	width:50px;
+}
+.beige{
+	grid-area: b;
+	height: 50px;
+	width:50px;
+	background-color: #EBC1A0;
+}
+.marron{
+	grid-area: ma;
+	height: 50px;
+	width:50px;
+	background-color: #9E630D;
+}

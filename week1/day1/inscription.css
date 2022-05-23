@@ -1,0 +1,70 @@
+body{
+	margin: 0;
+}
+
+nav{
+	background-color: green;
+	width: 100%;
+	font-size: larger;
+	padding: 25px;
+}
+img{
+	width: 90px;
+	height: 80px;
+	top: 150px;
+	float: left;
+}
+
+p{
+	text-align: center;
+}
+
+.button{
+	text-decoration: none;
+	background-color: limegreen;
+	position: relative;
+	text-decoration: none;
+	display: inline-block;
+	box-shadow: 0 5px 0 limegreen;
+	color: white;
+	padding: 0.5em 1.5em;
+	text-align: center;
+
+}
+legend{
+	font-weight: bold;
+	font-style: 20px;
+	text-align: center;
+	font-family: verdana;
+	color: green;
+}
+fieldset{
+	padding: 0 50px 50px 50px;
+	margin: 10px;
+	border: 1px solid limegreen;
+
+}
+nav a{
+	color: white;
+	text-decoration: none;
+}
+.menu{
+	float: left;
+	margin-right: 90px;
+	font-weight: bold;
+}
+.menu:hover{
+	font-size: 20px;
+
+}
+div{
+	float: right;
+	margin-right: 50px;
+}
+footer{
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	background-color:rgba(0,200,0,0.5);
+	text-align: center;
+}

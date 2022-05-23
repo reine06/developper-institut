@@ -1,0 +1,95 @@
+body{
+	border: 10px  double blue;
+	
+	margin: 80px;
+}
+.container{
+	height: 100px;
+	width: 100%;
+	display: grid;
+	grid-gap: 5px ;
+	grid-template-areas:
+	"m p p p" 
+	"m p p p"
+	"m e e e"
+	"m s s s"
+	"m ex ex ex"
+	
+}
+.market{
+	grid-area: m;
+	background-color: skyblue;
+}
+.profil{
+	grid-area: p;
+	background-color: white;
+	text-align: left;
+	padding-left: 15px;
+}
+.education{
+	grid-area: e;
+	background-color: skyblue;
+	text-align: left;
+	padding-left: 15px;
+}
+.skill{
+	grid-area: s;
+	background-color: white;
+	text-align: left;
+	padding-left: 15px;
+}
+.experience{
+	grid-area: ex;
+	background-color: skyblue;
+}
+
+.cvphoto{
+	
+	width: 100px;
+	border-radius: 50px 50px 50px 50px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin:auto;
+}
+.nom{
+	font-family: verdana,serif;
+	font-style: bold;
+	font-size: 20px;
+	text-align: center;
+}
+h3{
+	text-align: center;
+	font-style: italic;
+	font-size: 15px;
+}
+.info{
+	text-align: center;
+	font-size: 15px;
+
+}
+.social-media{
+	flex-direction: column;
+	display: flex;
+	justify-content:center;
+	width: 30px;
+	margin: auto;
+	align-items: center;
+	font-size: 30px;
+
+	
+}
+.social-media:hover{
+	color: blue;
+}
+
+.social{
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+i{
+	width: 15px;
+
+}
+

@@ -1,0 +1,116 @@
+body{
+	margin: 0;
+}
+
+nav{
+	background-color: green;
+	width: 100%;
+	font-size: larger;
+	padding: 25px;
+}
+img{
+	width: 90px;
+	height: 80px;
+	top: 150px;
+	float: left;
+}
+nav a{
+	color: white;
+	text-decoration: none;
+}
+.menu{
+	float: left;
+	margin-right: 90px;
+	font-weight: bold;
+}
+.menu:hover{
+	font-size: 20px;
+	
+	color: red;
+
+}
+div{
+	float: right;
+	margin-right: 50px;
+}
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background-color:rgba(0,200,0,0.5);
+	
+}
+h1{
+	text-decoration: underline;
+	text-align: center;
+	color: limegreen;
+	font-family: verdana;
+}
+.barre{
+	text-decoration: line-through;
+}
+.icone{
+	display: flex;
+	float: left;
+	position: absolute;
+	
+	left: 200px;
+	z-index: 0;
+	margin-top: 0;
+	
+
+}
+.icone1{
+	display: flex;
+	float: right;
+	position: absolute;
+	
+	right: 200px;
+	z-index: 0;
+	margin-top: 0;
+}
+.new1{
+	height: 50px;
+	width: 50px;
+
+}
+
+button{
+	background-color: limegreen;
+	padding: 10px;
+	font-weight: 10px;
+}
+.container{
+            display: inline-flex;
+            margin: 30px 30px;
+ }
+.shop_div{
+      width: 280px;
+       margin: 0 auto;
+      position: relative;
+      padding: 15px;
+      text-align: center;                 
+}
+.shop-img{
+      height: 250px;
+      width: 80%;
+      transition: transform .5s;
+}
+.img-text{
+     text-align: center;
+      opacity: 0;
+      transition: opacity .5s;
+      position: absolute;
+      bottom: 20%;
+      left: 20%;
+      color: white;
+}
+.shop_div:hover .img-text{
+      opacity: 1;
+}
+​.h34{
+	position: relative;
+	bottom: 10px;
+	right: 0;
+}
